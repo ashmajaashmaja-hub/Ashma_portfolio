@@ -1,82 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashma J A Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashma J A | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 10%;
+}
+
+h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    margin-top:15px;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+</style>
 </head>
+
 <body>
 
-    <header>
+<header>
+    <div class="hero">
         <h1>Ashma J A</h1>
-        <p>Computer Science and Engineering Student</p>
-    </header>
+        <p>Computer Science & Engineering Student</p>
+        <a href="#about" class="btn">Explore Portfolio</a>
+    </div>
+</header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#project">Project</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
         <p>
             I am Ashma J A, a Computer Science and Engineering student.
-            I have learned C and Python during my college studies.
-            I completed the HDCA course at CSC where I learned HTML, CSS,
-            C, C++, Python, MySQL, MS Word and MS Excel.
-            I enjoy coding, learning new technologies and working on
-            embedded systems.
+            I have learned C and Python during my college studies and
+            completed the HDCA course at CSC where I gained knowledge in
+            HTML, CSS, C, C++, Python, MySQL, MS Word and MS Excel.
+            I enjoy coding, problem solving and learning new technologies.
         </p>
-    </section>
+    </div>
+</section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>C Programming</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>MySQL</li>
-            <li>Arduino</li>
-            <li>Embedded Systems</li>
-        </ul>
-    </section>
+<section>
+    <h2>Skills</h2>
 
-    <section id="project">
-        <h2>Project</h2>
+    <div class="skills">
+        <div class="skill">C</div>
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Arduino</div>
+        <div class="skill">Embedded Systems</div>
+    </div>
+</section>
+
+<section>
+    <h2>Project</h2>
+
+    <div class="card">
         <h3>Active Temperature Control Bottle</h3>
+        <br>
         <p>
             Developed an innovative bottle capable of controlling water
             temperature using Arduino, Peltier Modules and Embedded Systems.
             This project was completed as part of Project Based Learning
             and received the Best Project Award of the Year.
         </p>
-    </section>
+    </div>
+</section>
 
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>🏆 Best Project Award of the Year</li>
-            <li>🎓 Mahatma Gandhi Scholarship Award</li>
-            <li>📚 Completed HDCA Course at CSC</li>
-        </ul>
-    </section>
+<section>
+    <h2>Achievements</h2>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <div class="card">
+        🏆 Best Project Award of the Year
+    </div>
+
+    <div class="card">
+        🎓 Mahatma Gandhi Scholarship Award
+    </div>
+
+    <div class="card">
+        📜 HDCA Certification
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+
+    <div class="card">
         <p>Email: yourmail@example.com</p>
-        <p>GitHub: github.com/yourgithub</p>
-    </section>
+        <br>
+        <p>GitHub: github.com/yourusername</p>
+    </div>
+</section>
 
-    <footer>
-        <p>© 2026 Ashma J A | Portfolio Website</p>
-    </footer>
+<footer>
+    <p>© 2026 Ashma J A | Portfolio</p>
+</footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
