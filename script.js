@@ -1,7 +1,11 @@
-console.log("Welcome to Ashma's Portfolio!");
-
-document.querySelectorAll("nav a").forEach(link => {
-    link.addEventListener("click", function() {
-        console.log("Navigated to " + this.textContent);
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+            .scrollIntoView({
+                behavior: 'smooth'
+            });
     });
 });
+
+console.log("Ashma Portfolio Loaded");
